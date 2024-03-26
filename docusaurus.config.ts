@@ -19,7 +19,7 @@ const config: Config = {
   organizationName: 'evmbook', // Usually your GitHub org/user name.
   projectName: 'evmbook', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  // onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
