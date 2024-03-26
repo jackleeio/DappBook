@@ -12,12 +12,12 @@ const config: Config = {
   url: 'https://evmbook.jacklee.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/EvmBook',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'evmbook', // Usually your GitHub org/user name.
+  projectName: 'evmbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -72,7 +72,7 @@ const config: Config = {
           label: 'Tools',
         },
         { to: '/blog', label: 'Evm Internals', position: 'left' },
-        { to: '/layer2', label: 'Layer2', position: 'left' },
+        // { to: '/layer2', label: 'Layer2', position: 'left' },
         // { to: '/tools', label: 'Tools', position: 'left' },
         // { to: '/chains', label: 'Chains', position: 'left' },
         // { to: '/security', label: 'Security', position: 'left' },
