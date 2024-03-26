@@ -67,16 +67,17 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'evmInternalsSidebar',
           position: 'left',
           label: 'Evm Internals',
         },
-        { to: '/blog', label: 'Solidity', position: 'left' },
-        { to: '/docs/layer2', label: 'Layer2', position: 'left' },
-        { to: '/docs/tools', label: 'Tools', position: 'left' },
+        // { to: '/blog', label: 'Solidity', position: 'left' },
+        { to: '/docs/solidity', label: 'Solidity', position: 'left', sidebarId: 'soliditySidebar' },
+        { to: '/docs/layer2', label: 'Layer2', position: 'left', sidebarId: 'layer2Sidebar' },
+        { to: '/docs/tools', label: 'Tools', position: 'left', },
         // { to: '/chains', label: 'Chains', position: 'left' },
-        { to: '/docs/security', label: 'Security', position: 'left' },
-        { to: '/docs/invest', label: 'Invest', position: 'left' },
+        { to: '/docs/security', label: 'Security', position: 'left', sidebarId: 'securitySidebar' },
+        { to: '/docs/invest', label: 'Invest', position: 'left', sidebarId: 'investSidebar' },
         // {
         //   to: '/chains', label: 'Security', type: 'dropdown', items: [
         //     { to: '/chains', label: 'Chains', },
