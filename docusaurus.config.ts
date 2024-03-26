@@ -9,7 +9,7 @@ const config: Config = {
 
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://evmbook.jacklee.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -69,12 +69,13 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Tools',
         },
         { to: '/blog', label: 'Evm Internals', position: 'left' },
-        { to: '/tools', label: 'Tools', position: 'left' },
-        { to: '/chains', label: 'Chains', position: 'left' },
-        { to: '/security', label: 'Security', position: 'left' },
+        { to: '/layer2', label: 'Layer2', position: 'left' },
+        // { to: '/tools', label: 'Tools', position: 'left' },
+        // { to: '/chains', label: 'Chains', position: 'left' },
+        // { to: '/security', label: 'Security', position: 'left' },
         // {
         //   to: '/chains', label: 'Security', type: 'dropdown', items: [
         //     { to: '/chains', label: 'Chains', },
@@ -131,7 +132,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} EvmBook . Built by JackLee`,
     },
     prism: {
       theme: prismThemes.github,
