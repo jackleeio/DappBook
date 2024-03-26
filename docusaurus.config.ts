@@ -19,7 +19,7 @@ const config: Config = {
   organizationName: 'evmbook', // Usually your GitHub org/user name.
   projectName: 'evmbook', // Usually your repo name.
 
-  // onBrokenLinks: 'throw',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -74,10 +74,9 @@ const config: Config = {
         // { to: '/blog', label: 'Solidity', position: 'left' },
         { to: '/docs/solidity', label: 'Solidity', position: 'left', sidebarId: 'soliditySidebar' },
         { to: '/docs/layer2', label: 'Layer2', position: 'left', sidebarId: 'layer2Sidebar' },
-        { to: '/docs/tools', label: 'Tools', position: 'left', },
+        { to: '/blog', label: 'Tools', position: 'left', },
         // { to: '/chains', label: 'Chains', position: 'left' },
         { to: '/docs/security', label: 'Security', position: 'left', sidebarId: 'securitySidebar' },
-        { to: '/docs/invest', label: 'Invest', position: 'left', sidebarId: 'investSidebar' },
         // {
         //   to: '/chains', label: 'Security', type: 'dropdown', items: [
         //     { to: '/chains', label: 'Chains', },
