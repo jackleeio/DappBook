@@ -12,7 +12,7 @@ const config: Config = {
   url: 'https://evmbook.jacklee.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/EvmBook',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -69,13 +69,14 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tools',
+          label: 'Evm Internals',
         },
-        { to: '/blog', label: 'Evm Internals', position: 'left' },
-        // { to: '/layer2', label: 'Layer2', position: 'left' },
-        // { to: '/tools', label: 'Tools', position: 'left' },
+        { to: '/blog', label: 'Solidity', position: 'left' },
+        { to: '/docs/layer2', label: 'Layer2', position: 'left' },
+        { to: '/docs/tools', label: 'Tools', position: 'left' },
         // { to: '/chains', label: 'Chains', position: 'left' },
-        // { to: '/security', label: 'Security', position: 'left' },
+        { to: '/docs/security', label: 'Security', position: 'left' },
+        { to: '/docs/invest', label: 'Invest', position: 'left' },
         // {
         //   to: '/chains', label: 'Security', type: 'dropdown', items: [
         //     { to: '/chains', label: 'Chains', },
@@ -83,7 +84,7 @@ const config: Config = {
         //   ]
         // },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/jackleeio/evmbook',
           label: 'GitHub',
           position: 'right',
         },
