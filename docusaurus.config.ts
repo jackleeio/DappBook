@@ -72,17 +72,18 @@ const config: Config = {
           label: 'Evm Internals',
         },
         // { to: '/blog', label: 'Solidity', position: 'left' },
-        { to: '/docs/solidity', label: 'Solidity', position: 'left', sidebarId: 'soliditySidebar' },
+        // { to: '/docs/solidity/', label: 'Solidity', position: 'left', sidebarId: 'soliditySidebar' },
         { to: '/docs/layer2', label: 'Layer2', position: 'left', sidebarId: 'layer2Sidebar' },
         { to: '/blog', label: 'Tools', position: 'left', },
         // { to: '/chains', label: 'Chains', position: 'left' },
         { to: '/docs/security', label: 'Security', position: 'left', sidebarId: 'securitySidebar' },
-        // {
-        //   to: '/chains', label: 'Security', type: 'dropdown', items: [
-        //     { to: '/chains', label: 'Chains', },
-        //     { to: '/chains', label: 'Security', },
-        //   ]
-        // },
+        {
+          to: '/', label: 'Solidity', type: 'dropdown', items: [
+            { to: '/docs/solidity/solidity-basic', label: 'Solidity Basic', sidebarId: 'solidityBasicSidebar' },
+            { to: '/docs/solidity/gas-optimization', label: 'Gas Optimization',sidebarId: 'gasOptimizationSidebar' },
+          ]
+
+        },
         {
           href: 'https://github.com/jackleeio/evmbook',
           label: 'GitHub',
