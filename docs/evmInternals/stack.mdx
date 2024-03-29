@@ -1,0 +1,85 @@
+---
+sidebar_position: 2
+title: 2.Stack
+tags:
+  - Evm
+  - basic
+  - evmbook
+---
+
+
+堆栈是一种非常简单的数据结构。它是一种列表，但有一个限制。你只能直接与它的顶部进行交互。
+
+你可以将一个新值推送到堆栈的顶部，或者你可以从堆栈中弹出一个已经存在的值。
+
+一堆盘子是一个很好的比喻。你可以在顶部添加或移除一个盘子。堆栈的工作方式完全相同。
+
+![Docusaurus Plushie](https://t3.ftcdn.net/jpg/00/86/06/84/360_F_86068474_Gmntyf4dZXTH9yWzyQCBaFmEvBQwDPiK.jpg)
+
+
+## 标题
+
+EVM栈的最大容量为1024个项。栈上的每个项最多是一个256位值（32字节）。
+
+`MAXIMUM_STACK_SIZE = 1024`
+
+如果我们试图从一个空栈中弹出一个值，我们也会抛出一个异常。
+
+```python
+class Stack:
+    def __init__(self): self.items = []
+    def __str__ (self): 
+        ws = []
+        for i, item in enumerate(self.items[::-1]):
+            if   i == 0                : ws.append(f"{item} <首位")
+            elif i == len(self.items)-1: ws.append(f"{item} <末位") 
+            else                       : ws.append(str(item))
+        return "\n".join(ws)
+        
+    def push(self, value): 
+        if len(self.items) == MAXIMUM_STACK_SIZE-1: raise Exception("栈溢出")
+        self.items.append(value)    
+    
+    def pop(self, n=-1):
+        if len(self.items) < n: raise Exception("栈溢出")
+        del self.items[n]
+```
+
+我们创建一个栈
+
+```python
+stack = Stack()
+```
+
+我们向栈推送3个值
+
+```python
+stack.push(2)
+stack.push(4)
+stack.push(1)
+
+print(stack)
+```
+
+输出：
+
+```
+1 <首位
+4
+2 <末位
+```
+
+我们从栈中弹出一个值，即1。
+
+```python
+stack.pop()
+```
+
+现在栈上只剩下2个值。注意我们是如何移除1的。并且4已经成为了第一个值。
+
+输出：
+
+```
+4 <首位
+2 <末位
+```
