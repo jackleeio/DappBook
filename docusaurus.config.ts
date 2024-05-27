@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'EvmBook',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Advanced Manual for EVM-Compatible Blockchain Development',
   favicon: 'img/favicon.ico',
 
 
