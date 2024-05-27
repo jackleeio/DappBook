@@ -65,30 +65,33 @@ const config: Config = {
       //   src: 'img/logo.svg',
       // },
       items: [
+
+        // { to: '/blog', label: 'Solidity', position: 'left' },
+        // { to: '/docs/solidity/', label: 'Solidity', position: 'left', sidebarId: 'soliditySidebar' },
+        // { to: '/docs/layer2', label: 'Layer2', position: 'left', sidebarId: 'layer2Sidebar' },
+        // { to: '/chains', label: 'Chains', position: 'left' },
+        { to: '/docs/security', label: 'Contract Security', position: 'left', sidebarId: 'securitySidebar' },
+        { to: '/docs/security', label: 'Gas Optimization', position: 'left', sidebarId: 'securitySidebar' },
+        {
+          to: '/', label: 'Building Dapp', type: 'dropdown', items: [
+            { to: '/docs/solidity/solidity-basic', label: 'Uniswap', sidebarId: 'solidityBasicSidebar' },
+            // { to: '/docs/solidity/gas-optimization', label: 'Gas Optimization',sidebarId: 'gasOptimizationSidebar' },
+          ]
+        },
         {
           type: 'docSidebar',
           sidebarId: 'evmInternalsSidebar',
           position: 'left',
           label: 'Evm Internals',
         },
-        // { to: '/blog', label: 'Solidity', position: 'left' },
-        // { to: '/docs/solidity/', label: 'Solidity', position: 'left', sidebarId: 'soliditySidebar' },
-        { to: '/docs/layer2', label: 'Layer2', position: 'left', sidebarId: 'layer2Sidebar' },
-        { to: '/blog', label: 'Tools', position: 'left', },
-        // { to: '/chains', label: 'Chains', position: 'left' },
-        { to: '/docs/security', label: 'Security', position: 'left', sidebarId: 'securitySidebar' },
-        {
-          to: '/', label: 'Solidity', type: 'dropdown', items: [
-            { to: '/docs/solidity/solidity-basic', label: 'Solidity Basic', sidebarId: 'solidityBasicSidebar' },
-            { to: '/docs/solidity/gas-optimization', label: 'Gas Optimization',sidebarId: 'gasOptimizationSidebar' },
-          ]
-
-        },
         {
           href: 'https://github.com/jackleeio/evmbook',
           label: 'GitHub',
           position: 'right',
         },
+        { to: '/docs/security', label: 'Ethers.js', position: 'left', sidebarId: 'securitySidebar' },
+        { to: '/docs/security', label: 'Web3.py', position: 'left', sidebarId: 'securitySidebar' },
+        { to: '/blog', label: 'Tools', position: 'left', },
       ],
     },
     footer: {
